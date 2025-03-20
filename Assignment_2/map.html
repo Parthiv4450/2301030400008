@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Historical Map</title>
+    <link rel="stylesheet" href="map.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <h1>Historical Maps</h1>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="feature.html">Features</a></li>
+            <li><a href="map.html">Maps</a></li>
+            <li><a href="main.html">Main</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+           
+            <li><a href="FAQ.html">FAQ</a></li>
+   
+        </ul>
+    </nav>
+    
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Explore Historical Events Through Maps</h1>
+            <p>Historical Maps & Events: Understanding the Past Through Cartography
+                Historical maps are more than just representations of geography; they are windows into the past, capturing how people understood their world at different points in time. Our approach is based on Historical Cartography and Temporal GIS (Geographic Information Systems) Theory, which combines traditional map-making with modern digital tools to visualize historical events dynamically.
+                
+                <p>Why Historical Maps Matter?
+                🗺️ Contextualizing Events: Maps help place historical events within their geographic and political landscapes.
+                📅 Tracking Change Over Time: Temporal GIS allows us to see how borders, cities, and routes evolved through history.
+                🔍 Interpreting the Past Accurately: By comparing historical maps with modern data, we gain deeper insights into past civilizations, migrations, and conflicts.
+                </p>
+                By integrating interactive historical maps, our platform enables users to explore events visually, navigate different time periods, and understand history from a geographical perspective.
+                
+                Start exploring now and uncover history through maps like never before!</p>
+        </div>
+    </header>
+    
+    <!-- Map Section -->
+    <section class="map-container">
+        <h2>Historical Map</h2>
+        <img src="maps histori.jpeg" width="1230px" height="750px">
+        <p>Use the map below to explore historical events by location and time.</p>
+        <div id="map"></div>
+    </section>
+
+   
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Interactive Historical Maps. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for updating the timeline value
+        document.getElementById('timeline-slider').addEventListener('input', function() {
+            document.getElementById('selected-year').textContent = this.value;
+        });
+    </script>
+</body>
+</html>
